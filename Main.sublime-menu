@@ -1,0 +1,9 @@
+[
+    {
+        "id": "goto",
+        "children":
+        [
+            { "id": "goto_related", "caption": "Goto Related…", "command": "goto_related" }
+        ]
+    }
+]
