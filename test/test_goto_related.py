@@ -12,12 +12,13 @@ class TestGotoRelated(unittest.TestCase):
 
     def setUp(self):
         self.subject = GotoRelatedCommand()
+        self.subject.current_file_path = Mock(return_value='/Users/mike/projects/example/app/main.py')
         self.subject.show_goto = Mock()
         self.edit = Mock()
 
     def test_run(self):
         self.subject.run(self.edit)
-        self.subject.show_goto.assert_called_with('hello')
+        self.subject.show_goto.assert_called_with('/Users/mike/projects/example/app/main.py')
 
 if __name__ == '__main__':
     unittest.main()
