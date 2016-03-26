@@ -6,4 +6,7 @@ except ImportError:
 class GotoRelatedCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
-        return 'Hello from GotoRelatedCommand'
+        self.show_goto('hello')
+
+    def show_goto(self, initial_text):
+        self.view.window().run_command('show_overlay', { 'overlay': 'goto', 'text': initial_text })

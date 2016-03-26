@@ -12,10 +12,12 @@ class TestGotoRelated(unittest.TestCase):
 
     def setUp(self):
         self.subject = GotoRelatedCommand()
+        self.subject.show_goto = Mock()
         self.edit = Mock()
 
     def test_run(self):
-        self.assertEqual(self.subject.run(self.edit), 'Hello from GotoRelatedCommand')
+        self.subject.run(self.edit)
+        self.subject.show_goto.assert_called_with('hello')
 
 if __name__ == '__main__':
     unittest.main()
