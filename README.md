@@ -1,4 +1,6 @@
-# Usage
+# Overview
+
+<img src="https://raw.githubusercontent.com/schreifels/sublime-goto-related/master/screenshot/screenshot.png" width="550" alt="">
 
 By default, Goto Related can be activated with `Goto > Goto Related` or by
 pressing `⌘+.` (OSX only).
