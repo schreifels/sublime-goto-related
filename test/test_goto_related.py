@@ -18,7 +18,7 @@ class TestGotoRelated(unittest.TestCase):
 
     def test_run(self):
         self.subject.run(self.edit)
-        self.subject.show_goto.assert_called_with('/Users/mike/projects/example/app/main.py')
+        self.subject.show_goto.assert_called_with('main.py')
 
 if __name__ == '__main__':
     unittest.main()
