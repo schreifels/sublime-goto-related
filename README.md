@@ -15,7 +15,9 @@ pre-populated.*
 
 # Installation
 
-TODO
+You can
+[install the package manually](http://docs.sublimetext.info/en/latest/extensibility/packages.html#installing-packages)
+or, if you use [Package Control](https://packagecontrol.io), install "Goto Related".
 
 # Configuration
 
